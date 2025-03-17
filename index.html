@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Ricci - Personal Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: whitesmoke;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: grey;
+            color: white;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px 0;
+            object-fit: cover;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .skills-hobbies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        h2 {
+            color: grey;
+            margin-bottom: 15px;
+            border-bottom: 2px solid red;
+            padding-bottom: 5px;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header {
+                padding: 30px 0;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Diego Ricci</h1>
+            <p>Industrial Engineering Student</p>
+            <img src="IMG_20230721_130457.jpg" alt="Diego Ricci" class="profile-img">
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>Introduction</h2>
+            <p>Industrial Engineering student at Universidad de los Andes since 2022. Passionate about technology, finance, and outdoor sports. Currently expanding my knowledge in programming and business systems.</p>
+        </section>
+
+        <div class="skills-hobbies">
+            <section class="section">
+                <h2>Skills & Expertise</h2>
+                <ul>
+                    <li>Python Programming</li>
+                    <li>SQL Databases</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Interests & Hobbies</h2>
+                <ul>
+                    <li>Wakeboarding</li>
+                    <li>Mountain Biking</li>
+                    <li>Stock Market Investing</li>
+                    <li>Technology Trends</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="section">
+            <h2>Connect</h2>
+            <p>Check out my GitHub <a href="https://github.com/DRicciS" target="_blank">Github</a></p>
+        </section>
+    </main>
+</body>
+</html>
